@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* body .main .container .visHolder 
+body main div chart-container */
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    place-items: center;
+
+    font-family: 'Roboto';
+    background-color: #708090;  
+}
+
+main > div {
+    height: 560px;
+    width: 900px;
+    padding: 20px;
+
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+#tooltip {
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    box-shadow: 1px 1px 10px;
+
+    border-radius: 2px;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: lightsteelblue;
+
+    text-align: center;
+    font: 12px;
+}
+
+.bar {
+    fill: rgb(51, 173, 255);
+    &:hover {
+        fill: white;
+    }
+}
+    
+
+.info {
+    font-size: 0.8em;
+}
